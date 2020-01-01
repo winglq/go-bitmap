@@ -8,8 +8,8 @@ package bitmap
 import "sync"
 
 var (
-	tA = [8]byte{1, 2, 4, 8, 16, 32, 64, 128}
-	tB = [8]byte{254, 253, 251, 247, 239, 223, 191, 127}
+	tA = [8]byte{128, 64, 32, 16, 8, 4, 2, 1}
+	tB = [8]byte{127, 191, 223, 239, 247, 251, 253, 254}
 )
 
 func dataOrCopy(d []byte, c bool) []byte {
